@@ -35,10 +35,15 @@ a {
 
 .plane img,
 .Guat img {
-  height: 100px;
+
   transform: rotate(90deg);
 }
 
 img {
   height: 100px;
+}
+
+h3 a {
+  color: blue;
+  text-decoration: none !important;
 }
