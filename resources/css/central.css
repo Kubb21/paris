@@ -27,20 +27,3 @@ a {
   color: white;
   text-decoration: none;
 }
-
-
-
-.plane img,
-.Guat img {
-
-  transform: rotate(90deg);
-}
-
-img {
-  height: 100px;
-}
-
-h3 a {
-  color: blue;
-  text-decoration: none !important;
-}

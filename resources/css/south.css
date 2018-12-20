@@ -15,7 +15,7 @@ nav {
   width: 100%;
 }
 
-span a {
+.fab {
   z-index: 1;
 }
 
@@ -26,21 +26,4 @@ li {
 a {
   color: white;
   text-decoration: none;
-}
-
-
-
-.plane img,
-.Guat img {
-
-  transform: rotate(90deg);
-}
-
-img {
-  height: 100px;
-}
-
-h3 a {
-  color: blue;
-  text-decoration: none !important;
 }
