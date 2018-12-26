@@ -66,3 +66,41 @@ h1 {
 .container-fluid {
 
 }
+
+.northamerica {
+  text-align: center;
+}
+
+.centralamerica {
+  text-align: center;
+}
+
+.caribbean {
+  text-align: center;
+}
+
+.europe {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.dropdown:hover {
+
+}
+
+.dropdown-menu li {
+position: relative;
+
+}
+
+.dropdown-menu a {
+  text-align: center;
+
+}
+
+.dropdown-menu li:hover {
+display: block;
+}

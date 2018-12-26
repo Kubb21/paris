@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>All Ten In</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 
@@ -66,66 +70,91 @@
     <div id="journeys">
       <h1>Life has taken me...</h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
-          <h3>North America</h3>
-            <h4>East Coast</h4>
-              <ul>
+        <div class="col-md-3 northamerica">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>North America</h3>
+            </button>
+          </div>
+          <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>East Coast</h4>
+              </button>
+              <ul class="dropdown-menu">
                 <li>Maine</li>
                 <li>New York</li>
                 <li>Washinton D.C.</li>
                 <li><a href="./eastcoast.html">Ontario, CA</a></li>
               </ul>
-            <div id="midwest"><h4>Midwest</h4></div>
-              <ul>
-                <li><a href="./midwest.html">Wisconsin(Home State)</a></li>
-                <li><a href="./midwest.html">Minnesota</a></li>
-                <li>Ohio</li>
-              </ul>
-            <h4>West Coast</h4>
-              <ul>
-                <li><a href="./westcoast.html">Colorado</a></li>
-                <li><a href="./westcoast.html">California</a></li>
-                <li><a href="./westcoast.html">Looking to grow?<!--Hawaii--></a></li>
-                <li>Utah</li>
-              </ul>
-            <h4>South</h4>
-              <ul>
-                <li>Florida</li>
-                <li><a href="./south.html">Kentucky</a></li>
-                <li>Tennessee</li>
-                <li><a href="./south.html">Traveling for the first time?<!--Georgia--></a></li>
-                <li>Mexico</li>
-              </ul>
-          </div>
-          <div class="col-md-3">
-            <h3>Central America</h3>
-              <ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><div id="midwest"><h4>Midwest</h4></div>
+              </button>
+                <ul class="dropdown-menu">
+                  <li><a href="./midwest.html">Wisconsin(Home State)</a></li>
+                  <li><a href="./midwest.html">Minnesota</a></li>
+                  <li>Ohio</li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>West Coast</h4>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="./westcoast.html">Colorado</a></li>
+                  <li><a href="./westcoast.html">California</a></li>
+                  <li><a href="./westcoast.html">Looking to grow?<!--Hawaii--></a></li>
+                  <li>Utah</li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>South</h4>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>Florida</li>
+                  <li><a href="./south.html">Kentucky</a></li>
+                  <li>Tennessee</li>
+                  <li><a href="./south.html">Traveling for the first time?<!--Georgia--></a></li>
+                  <li>Mexico</li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="col-md-3 centralamerica">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>Central America</h3>
+              </button>
+              <ul class="dropdown-menu">
                 <li><a href="./central.html">Big step<!--Guatemala--></a></li>
                 <li><a href="./central.html">El Salvador</a></li>
                 <li><a href="./central.html">Nicaragua</a></li>
                 <li>Costa Rica</li>
               </ul>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3>Caribbean</h3>
-              <ul>
+          <div class="col-md-3 caribbean">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>Caribbean</h3>
+              </button>
+              <ul class="dropdown-menu">
                 <li>The Bahamas</li>
               </ul>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3>Europe</h3>
-              <h4>Western Europe</h4>
+          <div class="col-md-3 europe">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>Europe</h3>
+              </button>
+              <ul class="dropdown-menu">
+                <h4>Western Europe</h4>
                 <ul>
                   <li>France</li>
                   <li>Spain</li>
                   <li>Italy</li>
-                  <li>Austria</li>
+                  <li><a href="./europe.html">Austria</a></li>
                   <li>Germany</li>
-                  <li>Belgium</li>
+                  <li>Luxembourg</li>
                   <li>United Kingdom</li>
-                  <li>Ireland</li>
+                  <li><a href="./europe.html">Ireland</a></li>
                 </ul>
               </div>
             </div>
