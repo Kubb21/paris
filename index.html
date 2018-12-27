@@ -76,48 +76,57 @@
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>North America</h3>
             </button>
-          </div>
-          <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>East Coast</h4>
-              </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">East Coast <span class="caret"></a>
+                <ul class="dropdown-menu">
+                  <li>Maine</li>
+                  <li>New York</li>
+                  <li>Washington D.C.</li>
+                  <li><a tabindex="-1" href="./eastcoast.html">Ontario, CA</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Midwest<span class="caret"></a>
               <ul class="dropdown-menu">
-                <li>Maine</li>
-                <li>New York</li>
-                <li>Washinton D.C.</li>
-                <li><a href="./eastcoast.html">Ontario, CA</a></li>
+                <li><a tabindex="-1" href="./midwest.html">Wisconsin(Home State)</a></li>
+                <li><a tabindex="-1" href="./midwest.html">Minnesota</a></li>
+                <li>Ohio</li>
               </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><div id="midwest"><h4>Midwest</h4></div>
-              </button>
-                <ul class="dropdown-menu">
-                  <li><a href="./midwest.html">Wisconsin(Home State)</a></li>
-                  <li><a href="./midwest.html">Minnesota</a></li>
-                  <li>Ohio</li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>West Coast</h4>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="./westcoast.html">Colorado</a></li>
-                  <li><a href="./westcoast.html">California</a></li>
-                  <li><a href="./westcoast.html">Looking to grow?<!--Hawaii--></a></li>
-                  <li>Utah</li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h4>South</h4>
-                </button>
-                <ul class="dropdown-menu">
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1">West Coast<span class="caret"></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="./westcoast.html">Colorado</a></li>
+                <li><a tabindex="-1" href="./westcoast.html">California</a></li>
+                <li><a tabindex="-1" href="./westcoast.html">Looking to grow?<!--Hawaii--></a></li>
+                <li>Utah</li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1">South<span class="caret"></a>
+              <ul class="dropdown-menu">
                   <li>Florida</li>
-                  <li><a href="./south.html">Kentucky</a></li>
+                  <li><a tabindex="-1" href="./south.html">Kentucky</a></li>
                   <li>Tennessee</li>
-                  <li><a href="./south.html">Traveling for the first time?<!--Georgia--></a></li>
+                  <li><a tabindex="-1" href="./south.html">Traveling for the first time?<!--Georgia--></a></li>
                   <li>Mexico</li>
                 </ul>
               </div>
             </div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
 
           <div class="col-md-3 centralamerica">
             <div class="dropdown">
@@ -145,21 +154,23 @@
               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><h3>Europe</h3>
               </button>
               <ul class="dropdown-menu">
-                <h4>Western Europe</h4>
-                <ul>
+                <li class="dropdown-submenu">
+                  <a class="test" tabindex="-1">Western Europe<span class="caret"></a>
+                <ul class="dropdown-menu">
                   <li>France</li>
                   <li>Spain</li>
                   <li>Italy</li>
-                  <li><a href="./europe.html">Austria</a></li>
+                  <li><a tabindex="-1" href="./europe.html">Austria</a></li>
                   <li>Germany</li>
                   <li>Luxembourg</li>
                   <li>United Kingdom</li>
-                  <li><a href="./europe.html">Ireland</a></li>
+                  <li><a tabindex="-1" href="./europe.html">Ireland</a></li>
                 </ul>
-              </div>
+              </li>
             </div>
           </div>
         </div>
+      </div>
 
       <div id="what's next">
         <div class="container-fluid">
