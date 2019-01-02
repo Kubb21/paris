@@ -4,12 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>All Ten In</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+
+
 
 
 
@@ -25,20 +29,36 @@
 
 
 <!-- Intro -->
-    <div class="carousel">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="cotainer-fluid plane">
-          <img src="images/plane.jpg" alt="Airplane in the clouds"></img>
+    <div class="container">
+      <div id="photos" class="carousel slide" data-ride="carousel">
+
+        <!-- indicators dot nav -->
+        <ol class="carousel-indicators">
+          <li data-target="#photos" data-slide-to="0" class="active"></li>
+          <li data-target="#photos" data-slide-to="1"></li>
+          <li data-target="#photos" data-slide-to="2"></li>
+          <li data-target="#photos" data-slide-to="3"></li>
+        </ol>
+        <!-- wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="container-fluid item active plane">
+            <img src="images/plane.jpg" alt="Plane in the clouds">
+          </div>
+          <div class="item">
+            <img src="images/Savannah.jpg" alt="Savannah, Georgia">
+          </div>
+          <div class="item coffee">
+            <img src="images/Coffee.jpg" alt="Three people drinking coffee">
+          </div>
+          <div class="item guat">
+            <img src="images/Guat.jpg" alt="Guatemala">
+          </div>
         </div>
-        <div class="cotainer-fluid Savannah">
-          <img src="images/Savannah.jpg" alt="Airplane in the clouds"></img>
-        </div>
-        <div class="cotainer-fluid Coffee">
-          <img src="images/Coffee.jpg" alt="Airplane in the clouds"></img>
-        </div>
-        <div class="cotainer-fluid Guat">
-          <img src="images/Guat.jpg" alt="Airplane in the clouds"></img>
-        </div>
+
+
+
+
+
       </div>
     </div>
 
@@ -54,9 +74,9 @@
           I learn something amazing from each person, for example when you eat a grapefruit enjoy the bitterness becasue life isn't always going to be so sweet. And my goal is to pass on something special to them.<br><br>
 
           Like many stories go it starts with a dream. I always had a strong inclination to travel, and my first thoughts about travel is when I heard that people travel to Europe with only a backpack.
-          This was always an image that I wanted to be painted into. I finally took the steps to make traveling a passion of mine in 2015. I moved to Athens, Georgia to live with my oldest brother, Tygh. I was 18 years old,
-          and I needed a change in my life. It was a great experience, and moving to GA fueled me to continue with my travel plans. During my time in Georgia, I would call my best friend, Hope, she was back home in Wisconsin, and
-          we would discuss plans to go on our first trip. We chose Hawaii, a dream of ours since we became friends. This was a huge point in my life. If I have a dream and enough passion IT WILL HAPPEN. My passion for travel has only grown with each experience.
+          This was always an image that I wanted to be painted into. In 2015, I finally took the steps to make traveling a passion of mine. I moved to Athens, Georgia to live with my oldest brother, Tygh. I was 18 years old,
+          and I tought it would be a good step in beginning my travel life. It was a great experience, and moving to GA fueled me to continue with my travel plans. During my time in Georgia, I would call my best friend, Hope, she was back home in Wisconsin, and
+          we would discuss plans to go on our first trip. We chose Hawaii, a dream of ours since we became friends 8 years ago. This was a huge point in my life. If I have a dream and enough passion IT WILL HAPPEN. My passion for travel has only grown with each experience.
           I have been continously traveling with breaks in between since 2015. Find out more about each of my desitinations, and how I have made travel work for me. I hope you enjoy my stories and will get something out of each one. I always travel with a
           purpose, and in hopes of growing to be a better human being. Welcome!(firm handshake)</p>
     </div>
@@ -66,11 +86,11 @@
     (World Wide Opportunites on Organic Farms) This made a lot of sense to us. We packed our bags and set off on our first travel desitnation together. As our wonderful wwoofing experience went on the travel itch
     became stronger. During our two month stay, we booked our next trip to Europe. We had no clue what we were in for, but we knew we would be alright. Shortly after we came home from Hawaii Hope and I were off to Europe.-->
 
-  <div class="container-fluid">
+  <div class="container">
     <div id="journeys">
       <h1>Life has taken me...</h1>
     </div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-3 northamerica">
           <div class="dropdown">
@@ -97,7 +117,7 @@
             </li>
 
             <li class="dropdown-submenu">
-              <a class="test" tabindex="-1">West Coast<span class="caret"></a>
+              <a class="test" tabindex="-1" href="#">West Coast<span class="caret"></a>
               <ul class="dropdown-menu">
                 <li><a tabindex="-1" href="./westcoast.html">Colorado</a></li>
                 <li><a tabindex="-1" href="./westcoast.html">California</a></li>
@@ -107,7 +127,7 @@
             </li>
 
             <li class="dropdown-submenu">
-              <a class="test" tabindex="-1">South<span class="caret"></a>
+              <a class="test" tabindex="-1" href="#">South<span class="caret"></a>
               <ul class="dropdown-menu">
                   <li>Florida</li>
                   <li><a tabindex="-1" href="./south.html">Kentucky</a></li>
@@ -155,7 +175,7 @@ $(document).ready(function(){
               </button>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu">
-                  <a class="test" tabindex="-1">Western Europe<span class="caret"></a>
+                  <a class="test" tabindex="-1" href="#">Western Europe<span class="caret"></a>
                 <ul class="dropdown-menu">
                   <li>France</li>
                   <li>Spain</li>
@@ -172,15 +192,15 @@ $(document).ready(function(){
         </div>
       </div>
 
-      <div id="what's next">
-        <div class="container-fluid">
-          <h3>If you are interested in following me around the world check out my instagram pages <a href="https://www.instagram.com/all_10_in/" target="_blank">@All_10_in</a> or <a href="https://www.instagram.com/mischievous_banshees/" target="_blank">@mischievous_banshees</a>. I would
-            love to hear what you have to say about travel. Contact me at samantha.a.walters@gmail.com, Thank You!</h3>
-          </div>
-        </div>
-    <footer>
-      Copyright 2018 by Samantha Walters.
-    </footer>
+    <div id="what's next">
+      <div class="container">
+        <p>If you are interested in following me around the world check out my instagram pages <a href="https://www.instagram.com/all_10_in/" target="_blank">@All_10_in</a>
+          and <a href="https://www.instagram.com/mischievous_banshees/" target="_blank">@mischievous_banshees</a>. I would love to hear what you have to say about travel. Contact me at samantha.a.walters@gmail.com. Walk light and leave only foot prints!</p>
+      <footer>
+        <p>Copyright 2018 by Samantha Walters.</p>
+      </footer>
+      </div>
+    </div>
 
 
 
